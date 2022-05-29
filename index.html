@@ -28,9 +28,9 @@
 
 <textarea data-template>
 
-# Zeta and Company: where we stand
+# Zeta and Company: Measures of Distinctiveness for Computational Literary Studies
 
-<img data-src="img/basics/zeta-logo.png" height="120"></img>
+<img data-src="img/basics/zeta-logo.png" height="100"></img>
 <br/><br/>
 
 **Christof Schöch with Julia Dudar and Keli Du**
@@ -84,6 +84,8 @@ SPP CLS General Meeting, May 31, 2022
 * <span style="background-color:DeepSkyBlue">Digital Literary and Cultural Studies (Dr. Joelle Weis)</span>
 
 ::
+- Our project is located in Research Area III
+- Other projects running there: 
 - Distant Reading / CLS INFRA: Community, corpus building, CLS methods
 - Mining and Modeling Text: Linked Open Data for literary history
 - Text+ / NFDI: infrastructure and community, Trier: "derived text formats"
@@ -107,11 +109,9 @@ SPP CLS General Meeting, May 31, 2022
 
 
 ---
-### Corpus building
+### Corpus building: French Novel
 
 <img data-src="img/roman20-line.png" height="180">
-<br/>
-<br/>
 
 * Contemporary French novels, ca. 1950-2000 <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
 * 1300+ novels digitized (scan, OCR, XML) so far <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
@@ -120,23 +120,29 @@ SPP CLS General Meeting, May 31, 2022
 
 ---
 ### Derived formats
-<img data-src="img/derived.png" height="320">
-<br/>
-<br/> 
+<img data-src="img/derived.png" height="300">&nbsp;&nbsp;&nbsp;&nbsp;<img data-src="img/derived-example.png" height="300">
+
+https://github.com/Zeta-and-Company/derived-formats
 
 * Token-level linguistic annotation <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
-* Segment-wise sequence randomization <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
+* Segment-wise sequence randomization (50 tokens) <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
 * Useable for Stylometry, Topic Modeling, Distinctiveness <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
 
 
 ---
-### Modeling measures
+### Implementing measures (e.g. DHd2022)
+<img data-src="img/pydistinto.png" height="300">&nbsp;&nbsp;&nbsp;&nbsp;<img data-src="img/pydistinto-implementation.png" height="300">
+
+https://github.com/Zeta-and-Company/pydistinto
+
+* Shared conceptual model for all measures  <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
+* Currently implements 9 measures (frequency, distribution, dispersion) <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
+* Many parameters: features, segment length, measure, etc. <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
+
+
 
 ---
-### Implementing measures
-
----
-### Testing Zeta and Eta
+### Testing Zeta and Eta (CHR 2021)
 <img data-src="img/zeta-eta.png" height="320">
 <br/>
 <br/> 
@@ -147,7 +153,7 @@ SPP CLS General Meeting, May 31, 2022
 
 
 ---
-### Theorizing about Evaluation
+### Theorizing about Evaluation (JLT 2021)
 <img data-src="img/jlt2021.png" height="320">
 <br/>
 <br/> 
@@ -157,7 +163,7 @@ SPP CLS General Meeting, May 31, 2022
 
 
 ---
-### Evaluation via classification task (CCLS2022)
+### Evaluation via classification task (CCLS 2022)
 <img data-src="img/jcls.png" height="320">
 <a href="img/jcls-fig4.png"><img data-src="img/jcls-fig4.png" height="320"></a>
 <br/>
@@ -171,12 +177,15 @@ SPP CLS General Meeting, May 31, 2022
 --
 ## (3) Zeta and company: next steps
 
-
 ---
-### Synthetic texts
+### Evaluation with synthetic texts
+* 320 synthetic texts:  <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
+  * randomly-selected, linguistically-annotated words
+  * subgenre-neutral texts of different lengths
+* Evaluation strategy  <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
+  * Introduce additional, artificial tokens with predetermined frequency and dispersion
+  * Check which measures identify the right tokens from the noise  
 
----
-### Uniformity of p-values (Lijffijt)
 
 ---
 ### Application study
@@ -188,18 +197,32 @@ SPP CLS General Meeting, May 31, 2022
 --
 ## (4) Zeta and company: Beyond Words
 
+---
+### Overall objective
+
+* To establish a (meaningful, interpretive) relationship between:  <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
+  * semantic features that are (statistically speaking) distinctive of specific (literary) subgenres and
+  * an explicit, detailed understanding of the characteristic properties of (literary) subgenres
 
 ---
 ### More corpora
-
-
----
-### Multi-word units
-
+* Larger corpus of French contemporary novels <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
+* 'Gutenberg Fiction' corpus (~16.000 novels) <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
+* Corpus of Contemporary American English (COCA) <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
 
 ---
-### Semantic distinctiveness
+### Features and measures
+* More complex features <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
+  * multi-word units
+  * semantic features
+  * semantically-defined multi-word units
+* => How do the established measures perform with such features?  <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" --> 
 
+---
+### Explicit model of subgenres
+* Analyse research literature on subgenres <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
+* Derive repeatedly-mentioned, fine-grained, descriptive profiles of subgenres  <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
+* Create hypotheses for semantics associated with properties <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
 
 
 --
