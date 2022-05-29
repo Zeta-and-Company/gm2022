@@ -41,7 +41,7 @@
 SPP CLS General Meeting, May 31, 2022
 <br/>https://zeta-project.eu/en/
 ***
-<img data-src="img/basics/dfg-logo.jpg" height="35"></img>&nbsp;&nbsp;&nbsp;<img data-src="img/basics/tcdh-slim.png" height="40"></img>&nbsp;&nbsp;&nbsp;<img data-src="img/basics/uni-trier.png" height="40"></img>&nbsp;&nbsp;&nbsp;<img data-src="img/basics/spp2207.png" height="45"></img>
+<img data-src="img/basics/dfg-logo.jpg" height="30"></img>&nbsp;&nbsp;&nbsp;<img data-src="img/basics/tcdh-slim.png" height="35"></img>&nbsp;&nbsp;&nbsp;<img data-src="img/basics/uni-trier.png" height="35"></img>&nbsp;&nbsp;&nbsp;<img data-src="img/basics/spp2207.png" height="40"></img>
 
 
 ::
@@ -67,23 +67,16 @@ SPP CLS General Meeting, May 31, 2022
 ## (1) Our project in context
 
 ---
-### Trier Center for Digital Humanities
-<img data-src="img/tcdh-homepage.png" height="500">
-<br/>
+### CL/DH and TCDH
+<img data-src="img/tcdh-homepage-wide.png" height="300">
 
-* https://tcdh.uni-trier.de/en/
+https://tcdh.uni-trier.de/en/
 
-
----
-### TCDH: three research areas
-<img data-src="img/tcdhx3.png" height="350">
-<br/>
-
-* Digital Editions and Lexicography (Dr. Claudia Bamberg)
-* Software Systems and Research Infrastructure (Dr. Thomas Burch)
-* <span style="background-color:DeepSkyBlue">Digital Literary and Cultural Studies (Dr. Joelle Weis)</span>
+* Research Area III: Digital Literary and Cultural Studies <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
+* Projects: MiMoText, Distant Reading / CLS INFRA, Text+ <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
 
 ::
+- Department for CL/DH and TCDH
 - Our project is located in Research Area III
 - Other projects running there: 
 - Distant Reading / CLS INFRA: Community, corpus building, CLS methods
@@ -97,8 +90,8 @@ SPP CLS General Meeting, May 31, 2022
 
 ---
 ### Key objectives 
-* Algorithmically support a key strategy in the Humanities: comparison (e.g. AVL, SFB 1288) <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
-* Model, implement, evaluate and use a range of measures of distinctiveness or keyness <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
+* Algorithmically support a key strategy in the Humanities: comparison<br/>(e.g. Comp. Lit., SFB 1288 Praktiken des Vergleichens, Klimek/Müller 2015) <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
+* Model, implement, evaluate and use a wide range<br/>of measures of distinctiveness or keyness <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
 * Use one shared implementation, to enable meaningful comparison <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
 * Use reference datasets relevant to CLS: subgenres of the novel <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="4" -->
 * Outcome: Descriptions and recommendations for use of such measures <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="5" -->
@@ -130,7 +123,7 @@ https://github.com/Zeta-and-Company/derived-formats
 
 
 ---
-### Implementing measures (e.g. DHd2022)
+### Implementation: pydistinto (DHd2022)
 <img data-src="img/pydistinto.png" height="300">&nbsp;&nbsp;&nbsp;&nbsp;<img data-src="img/pydistinto-implementation.png" height="300">
 
 https://github.com/Zeta-and-Company/pydistinto
@@ -143,27 +136,15 @@ https://github.com/Zeta-and-Company/pydistinto
 
 ---
 ### Testing Zeta and Eta (CHR 2021)
-<img data-src="img/zeta-eta.png" height="320">
-<br/>
-<br/> 
+<img data-src="img/zeta-eta.png" height="250">&nbsp;&nbsp;&nbsp;&nbsp;<img data-src="img/zeta-eta-frequency.png" height="250">
 
-* Zeta: Measure proposed by John Burrows <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
-* Eta: Measure based on Stefan Gries' dispersion measure <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
-* Both perform well but differ in the specificity of the words they identify <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
+* Zeta (Burrows) and Eta (based on Gries) <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
+* Eta tends to identify more specific / specialized vocabulary <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
+* The longer the segments are, the stronger this difference becomes <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
 
 
 ---
-### Theorizing about Evaluation (JLT 2021)
-<img data-src="img/jlt2021.png" height="320">
-<br/>
-<br/> 
-
-* It's a mistake to use any given measure to define distinctiveness <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
-* Need for qualitative understanding before quantitative evaluation <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
-
-
----
-### Evaluation via classification task (CCLS 2022)
+### Evaluation: classification task (CCLS 2022)
 <img data-src="img/jcls.png" height="320">
 <a href="img/jcls-fig4.png"><img data-src="img/jcls-fig4.png" height="320"></a>
 <br/>
@@ -173,9 +154,27 @@ https://github.com/Zeta-and-Company/pydistinto
 * For details, come listen to our talk at CCLS 2022 <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
 
 
+---
+### Theorizing about Evaluation (JLT 2021)
+<img data-src="img/jlt2021.png" height="320">
+<br/>
+<br/> 
+
+* It's a mistake to use a given measure to define distinctiveness <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
+* A qualitative understanding and explication is required first <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
+* This provides the reference for quantitative evaluation <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
+
+
+
 
 --
 ## (3) Zeta and company: next steps
+
+---
+### Summary 
+* Evaluation with synthetic texts and artificial features <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
+* Replication of "uniformity of p-values" test <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
+* Application study (French contemporary novel) <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
 
 ---
 ### Evaluation with synthetic texts
@@ -189,6 +188,10 @@ https://github.com/Zeta-and-Company/pydistinto
 
 ---
 ### Application study
+* Apply 1-2 robust but different measures to the French novel corpus <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
+* Research questions <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
+  * How much can be said about the subgenres based on the results? 
+  * What contribution to a qualitative evaluation does this yield? 
 
 
 
@@ -226,26 +229,24 @@ https://github.com/Zeta-and-Company/pydistinto
 
 
 --
-## Conclusion
+### Conclusion / Thank you!
+<img height="500" data-src="img/basics/danke.png"> <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
 
----
-### So, what is ELTEC?
-* A multilingual resource, of course <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
-
-
-
-
----
-### Thank you!
-<img height="500" data-src="img/basics/danke.png">
-
+::
+- So this is really it: I hope to have shown where we stand in the Zeta and Company project: 
+- What we have done, what we are going to do next, what we would love to do in the second phase of the project
+- Thank you! 
 
 ---
 ### References
 <small>
 
 * **References**
-
+  * Keli Du, Julia Dudar, Christof Schöch: “Evaluation of measures of distinctiveness: Classification of literary texts on the basis of distinctive words”. 1st Annual Conference for Computational Literary Studies. Darmstadt, June 1-2, 2022. – URL: https://jcls.io/site/conference/.
+  * Keli Du, Julia Dudar, Cora Rok, Christof Schöch. “Kontrastive Textanalyse mit pydistinto – Ein Python-Paket zur Nutzung unterschiedlicher Distinktivitätsmaße” [Poster]. In: DHd 2022 Kulturen des digitalen Gedächtnisses. 8. Tagung des Verbands “Digital Humanities im deutschsprachigen Raum” (DHd2022), hg. Michaela Geierhos, Peer Trilcke, Ingo Börner, Sabine Seifert, Anna Busch und Patrick Helling. Potsdam, 2022. DOI: 10.5281/zenodo.6327966.
+  * Keli Du, Julia Dudar, Cora Rok, Christof Schöch: “Zeta & Eta: An Exploration and Evaluation of two Dispersion-based Measures of Distinctiveness”. Computational Humanities Research 2021 (CHR2021). 17-19 Nov 2021, online. http://ceur-ws.org/Vol-2989/short_paper11.pdf
+  * Julian Schröter, Keli Du, Julia Dudar, Cora Rok, Christof Schöch: “From Keyness to Distinctiveness. Triangu­lation and Evaluation in Computational Literary Studies”. Journal of Literary Theory 15/1-2, 2021, 81-110. DOI: 10.1515/jlt-2021-2011. 
+  *  Keli Du, Julia Dudar, Cora Rok, Christof Schöch: “Inspecteur, embrasser, planète, Paris. Distinktivitätsmaße für die Analyse literarischer Subgenres. Interpretierbarkeit, Generalisierbarkeit, Erkenntniswert”. Sektion Digital, global, transdisziplinär: Impulse für eine transdisziplinäre Digitale Romanistik , org. Jan Rohden, Nanette Rißler-Pipka, José Calvo Tello, Romanistentag 2021, 4-7 Oct 2021.
 
 * **Links**
   * Slides: https://Zeta-and-Company.github.io/gm2022/
