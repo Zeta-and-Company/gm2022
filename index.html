@@ -54,38 +54,18 @@ SPP CLS General Meeting, May 31, 2022
 
 --
 ### Overview
-1. [Our project in context](#/2)
-1. [Zeta and Company: So far](#/3)
-1. [Zeta and Company: Next steps](#/4)
-1. [Zeta and Company: Beyond Words](#/5)
-1. [Conclusion](#/6)
+1. [Zeta and Company: So far](#/2)
+1. [Zeta and Company: Next steps](#/3)
+1. [Zeta and Company: Beyond Words](#/4)
 
 ::
+- I will talk about the project in three simple steps; 
+- basically, past, present and future. 
+
 
 
 --
-## (1) Our project in context
-
----
-### CL/DH and TCDH
-<img data-src="img/tcdh-homepage-wide.png" height="300">
-
-https://tcdh.uni-trier.de/en/
-
-* Research Area III: Digital Literary and Cultural Studies <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
-* Projects: MiMoText, Distant Reading / CLS INFRA, Text+ <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
-
-::
-- Department for CL/DH and TCDH
-- Our project is located in Research Area III
-- Other projects running there: 
-- Distant Reading / CLS INFRA: Community, corpus building, CLS methods
-- Mining and Modeling Text: Linked Open Data for literary history
-- Text+ / NFDI: infrastructure and community, Trier: "derived text formats"
-- So this is the context of our work in "Zeta and Company"
-
---
-## (2) Zeta and company: so far
+## (2) Zeta and company:<br/>So far
 
 
 ---
@@ -113,13 +93,17 @@ https://tcdh.uni-trier.de/en/
 
 ---
 ### Derived formats
-<img data-src="img/derived.png" height="300">&nbsp;&nbsp;&nbsp;&nbsp;<img data-src="img/derived-example.png" height="300">
+<img data-src="img/derived.png" height="300">&nbsp;&nbsp;&nbsp;&nbsp;
+<img data-src="img/derived-example.png" height="300"> <!-- .element: class="fragment data-fragment-index="2" -->
 
 https://github.com/Zeta-and-Company/derived-formats
 
 * Token-level linguistic annotation <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
 * Segment-wise sequence randomization (50 tokens) <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
 * Useable for Stylometry, Topic Modeling, Distinctiveness <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
+
+::
+- Incipit von Sortie d'usine im Original: "Une gare s'il faut situer, laquelle n'importe il est tôt, sept heures un peu plus, c'est nuit encore."
 
 
 ---
@@ -150,8 +134,10 @@ https://github.com/Zeta-and-Company/pydistinto
 <br/>
 <br/> 
 
-* Key result: dispersion and distribution-based measures are superior to frequency-based measures <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
-* For details, come listen to our talk at CCLS 2022 <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
+* Key result: dispersion and distribution-based measures are in some constellations preferable to frequency-based measures <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
+
+::
+- Our talk takes place on Wednesday, June 1st, session 2 (2:45-4:15pm). 
 
 
 ---
@@ -167,8 +153,10 @@ https://github.com/Zeta-and-Company/pydistinto
 
 
 
+
+
 --
-## (3) Zeta and company: next steps
+## (3) Zeta and company:<br/>Next steps
 
 ---
 ### Summary 
@@ -185,9 +173,17 @@ https://github.com/Zeta-and-Company/pydistinto
   * Introduce additional, artificial tokens with predetermined frequency and dispersion
   * Check which measures identify the right tokens from the noise  
 
+---
+### Uniformity of p-values
+<img data-src="img/lijffijt-uniformity.png" height="450">
+
+Lijffijt et al. 2014: "Significance testing of word frequencies in corpora", DSH. 
+
 
 ---
 ### Application study
+<img data-src="img/corpus-subgenres.png" height="250">
+
 * Apply 1-2 robust but different measures to the French novel corpus <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
 * Research questions <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
   * How much can be said about the subgenres based on the results? 
@@ -197,8 +193,9 @@ https://github.com/Zeta-and-Company/pydistinto
 
 
 
+
 --
-## (4) Zeta and company: Beyond Words
+## (4) Zeta and company:<br/>Beyond Words
 
 ---
 ### Overall objective
@@ -210,8 +207,13 @@ https://github.com/Zeta-and-Company/pydistinto
 ---
 ### More corpora
 * Larger corpus of French contemporary novels <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
-* 'Gutenberg Fiction' corpus (~16.000 novels) <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
+* 'Gutenberg Fiction' corpus (~15.000 narratives) <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
 * Corpus of Contemporary American English (COCA) <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
+
+::
+- Gutenberg fiction: similar subgenres, more texts, English-language
+- COCA: strongly balanced, includes a "fiction" category
+
 
 ---
 ### Features and measures
@@ -224,8 +226,16 @@ https://github.com/Zeta-and-Company/pydistinto
 ---
 ### Explicit model of subgenres
 * Analyse research literature on subgenres <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
-* Derive repeatedly-mentioned, fine-grained, descriptive profiles of subgenres  <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
-* Create hypotheses for semantics associated with properties <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
+* Derive repeatedly-mentioned, fine-grained, descriptive<br/>profiles of subgenres  <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
+  * themes
+  * plot / motives 
+  * character types
+  * settings 
+  * language / style 
+  * etc.
+* Use these profiles as reference for evaluation <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
+  * Test hypotheses for semantics associated with aspects of the profiles
+  * Annotate word lists for aspects of the profiles
 
 
 --
