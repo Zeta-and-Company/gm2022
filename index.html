@@ -31,9 +31,9 @@
 # Zeta and Company: Measures of Distinctiveness for Computational Literary Studies
 
 <img data-src="img/basics/zeta-logo.png" height="100"></img>
-<br/><br/>
+<br/>
 
-**Christof Schöch with Julia Dudar and Keli Du**
+**Christof Schöch, Julia Dudar and Keli Du<br/> with Cora Rok and Julian Schröter**
 
 <br/>
 
@@ -46,7 +46,7 @@ SPP CLS General Meeting, May 31, 2022
 
 ::
 - Very nice to be here, in person even! 
-- Welcome to this first presentation
+- Welcome to this presentation
 - I present today, but of course all of this is teamwork
 - Particularly greatful to Julia Dudar and Keli Du
 
@@ -71,7 +71,7 @@ SPP CLS General Meeting, May 31, 2022
 ---
 ### Key objectives 
 * Algorithmically support a key strategy in the Humanities: comparison<br/>(e.g. Comp. Lit., SFB 1288 Praktiken des Vergleichens, Klimek/Müller 2015) <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
-* Model, implement, evaluate and use a wide range<br/>of measures of distinctiveness or keyness <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
+* Model, understand, implement, evaluate and use a wide range<br/>of measures of distinctiveness (keyness) <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
 * Use one shared implementation, to enable meaningful comparison <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
 * Use reference datasets relevant to CLS: subgenres of the novel <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="4" -->
 * Outcome: Descriptions and recommendations for use of such measures <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="5" -->
@@ -89,12 +89,12 @@ SPP CLS General Meeting, May 31, 2022
 * Contemporary French novels, ca. 1950-2000 <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
 * 1300+ novels digitized (scan, OCR, XML) so far <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
 * current balanced reference set: 2x4x40=320 novels <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
-* rapid growth through targeted closing of gaps <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="4" -->
+* will growth through targeted closing of gaps <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="4" -->
 
 ---
-### Derived formats
-<img data-src="img/derived.png" height="300">&nbsp;&nbsp;&nbsp;&nbsp;
-<img data-src="img/derived-example.png" height="300"> <!-- .element: class="fragment data-fragment-index="2" -->
+### Available as "derived format"
+<img data-src="img/derived.png" height="300">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img data-src="img/derived-example.png" height="300"> 
 
 https://github.com/Zeta-and-Company/derived-formats
 
@@ -108,7 +108,7 @@ https://github.com/Zeta-and-Company/derived-formats
 
 ---
 ### Implementation: pydistinto (DHd2022)
-<img data-src="img/pydistinto.png" height="300">&nbsp;&nbsp;&nbsp;&nbsp;<img data-src="img/pydistinto-implementation.png" height="300">
+<img data-src="img/pydistinto.png" height="300">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img data-src="img/pydistinto-implementation.png" height="300">
 
 https://github.com/Zeta-and-Company/pydistinto
 
@@ -134,7 +134,7 @@ https://github.com/Zeta-and-Company/pydistinto
 <br/>
 <br/> 
 
-* Key result: dispersion and distribution-based measures are in some constellations preferable to frequency-based measures <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
+* Key result: dispersion and distribution-based measures are in some constellations (short wordlists) preferable to frequency-based measures <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
 
 ::
 - Our talk takes place on Wednesday, June 1st, session 2 (2:45-4:15pm). 
@@ -165,6 +165,17 @@ https://github.com/Zeta-and-Company/pydistinto
 * Application study (French contemporary novel) <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="3" -->
 
 ---
+### Uniformity of p-values
+<img data-src="img/lijffijt-uniformity.png" height="450">
+
+Lijffijt et al. 2014: "Significance testing of word frequencies in corpora", DSH. 
+
+::
+- Attempt to replicate the observations of Lijffijt, 
+- but including our Zeta and Eta measures, and others
+
+
+---
 ### Evaluation with synthetic texts
 * 320 synthetic texts:  <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="1" -->
   * randomly-selected, linguistically-annotated words
@@ -172,12 +183,6 @@ https://github.com/Zeta-and-Company/pydistinto
 * Evaluation strategy  <!-- .element: class="fragment fade-in-then-semi-out" data-fragment-index="2" -->
   * Introduce additional, artificial tokens with predetermined frequency and dispersion
   * Check which measures identify the right tokens from the noise  
-
----
-### Uniformity of p-values
-<img data-src="img/lijffijt-uniformity.png" height="450">
-
-Lijffijt et al. 2014: "Significance testing of word frequencies in corpora", DSH. 
 
 
 ---
